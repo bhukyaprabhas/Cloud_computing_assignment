@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Model weights and large artifacts (must not be committed to Git per Task 2 / Task 3 / Section 8)
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.onnx
+models/**/tokenizer.json
+*.safetensors
+*.bin
+*.pt
+
+# Credentials and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/

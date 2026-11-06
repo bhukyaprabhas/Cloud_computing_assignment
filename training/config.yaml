@@ -1,0 +1,13 @@
+# Task 2 Student Training Configuration (EleutherAI/pythia-70m)
+model_name: "EleutherAI/pythia-70m"
+seed: 42
+learning_rate: 0.0001
+batch_size: 8
+num_epochs: 3
+max_seq_length: 64
+weight_decay: 0.01
+
+library_versions:
+  torch: "2.11.0"
+  transformers: "5.22.1"
+  python: "3.13.6"

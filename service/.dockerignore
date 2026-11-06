@@ -1,0 +1,12 @@
+# Ignore models and datasets to keep image lightweight and compliant with Section 6
+models/
+datasets/
+data/
+*.bin
+*.safetensors
+*.pt
+__pycache__/
+*.pyc
+.git/
+results/
+tests/
