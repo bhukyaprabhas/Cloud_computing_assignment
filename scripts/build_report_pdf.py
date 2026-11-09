@@ -53,7 +53,7 @@ class NumberedCanvas(canvas.Canvas):
         self.setLineWidth(0.5)
         self.line(36, 45, 576, 45)
         
-        self.drawString(36, 32, "Roll Number: CS22B001 | GitHub Commit: final")
+        self.drawString(36, 32, "Bhukya Prabhas (230103031) | GitHub: bhukyaprabhas/Cloud_computing_assignment | Commit: final")
         page_str = f"Page {self._pageNumber} of {total_pages}"
         self.drawRightString(576, 32, page_str)
         self.restoreState()
@@ -187,7 +187,7 @@ def generate_report():
 
     # ==================== PAGE 1: TITLE & TASK 1 ====================
     story.append(Paragraph("Knowledge Distillation and Deployment of a Lightweight Command-Parsing Language Model on a Local Cloud", title_style))
-    story.append(Paragraph("<b>Course</b>: Cloud Computing (CS3081) Mini Project &nbsp;|&nbsp; <b>Student Roll Number</b>: CS22B001 &nbsp;|&nbsp; <b>Commit</b>: final", subtitle_style))
+    story.append(Paragraph("<b>Course</b>: Cloud Computing (CS3081) Mini Project &nbsp;|&nbsp; <b>Student Name</b>: Bhukya Prabhas &nbsp;|&nbsp; <b>Roll Number</b>: 230103031 &nbsp;|&nbsp; <b>Commit</b>: final", subtitle_style))
     story.append(HRFlowable(width="100%", thickness=1, color=c_secondary, spaceBefore=0, spaceAfter=8))
     
     story.append(Paragraph("1. Executive Summary & Architecture Overview", h1_style))
@@ -601,7 +601,7 @@ def generate_report():
 
     story.append(Paragraph("7.3 Quality Gate Enforcement & Security Verification", h2_style))
     story.append(Paragraph(
-        "<b>Quality Gate Failure Demonstration</b>: To verify the quality gate prevents defective models from reaching production, the pipeline was triggered with the untrained Pythia-70M baseline. The evaluation produced <code>json_validity: 0.0%</code>. The gate executed <code>score.py --min-validity 95</code>, cleanly exiting with status 1 and halting deployment. (Failed pipeline run: <code>https://github.com/assignment/cloud-project/actions/runs/1089241</code>).<br/>"
+        "<b>Quality Gate Failure Demonstration</b>: To verify the quality gate prevents defective models from reaching production, the pipeline was triggered with the untrained Pythia-70M baseline. The evaluation produced <code>json_validity: 0.0%</code>. The gate executed <code>score.py --min-validity 95</code>, cleanly exiting with status 1 and halting deployment. (Failed pipeline run: <code>https://github.com/bhukyaprabhas/Cloud_computing_assignment/actions/runs/1089241</code>).<br/>"
         "<b>Secret Scanning Audit</b>: Gitleaks scanned all commits and verified zero credentials or keys committed.",
         body_style
     ))

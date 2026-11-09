@@ -46,14 +46,14 @@ class ReflectionNumberedCanvas(canvas.Canvas):
         self.setLineWidth(0.5)
         self.line(40, 45, 572, 45)
         
-        self.drawString(40, 32, "CS3081 Mini Project Reflection — Roll No: CS22B001 | GitHub: github.com/assignment/cloud-project")
+        self.drawString(40, 32, "CS3081 Mini Project Reflection — Roll No: 230103031 | GitHub: github.com/bhukyaprabhas/Cloud_computing_assignment")
         page_str = f"Page {self._pageNumber} of {total_pages}"
         self.drawRightString(572, 32, page_str)
         self.restoreState()
 
 
 def build_reflection():
-    pdf_path = Path("CS22B001.pdf")
+    pdf_path = Path("230103031.pdf")
     
     doc = SimpleDocTemplate(
         str(pdf_path),
@@ -129,8 +129,8 @@ def build_reflection():
     # ==================== PAGE 1 ====================
     story.append(Paragraph("Personal Reflection & Learning Journal: Cloud Mini Project", title_style))
     story.append(Paragraph(
-        "<b>Student Name</b>: Candidate CS22B001 &nbsp;|&nbsp; <b>Roll Number</b>: CS22B001 &nbsp;|&nbsp; <b>Course</b>: CS3081 (Cloud Computing)<br/>"
-        "<b>GitHub Repository Link</b>: <font color='#2B6CB0'><u>https://github.com/assignment/cloud-project</u></font>",
+        "<b>Student Name</b>: Bhukya Prabhas &nbsp;|&nbsp; <b>Roll Number</b>: 230103031 &nbsp;|&nbsp; <b>Course</b>: CS3081 (Cloud Computing)<br/>"
+        "<b>GitHub Repository Link</b>: <font color='#2B6CB0'><u>https://github.com/bhukyaprabhas/Cloud_computing_assignment</u></font>",
         meta_style
     ))
     story.append(HRFlowable(width="100%", thickness=1, color=c_secondary, spaceBefore=0, spaceAfter=8))
@@ -237,7 +237,7 @@ def build_reflection():
     story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor("#CBD5E0"), spaceBefore=4, spaceAfter=4))
     story.append(Paragraph(
         "<b>Candidate Declaration</b>: I hereby confirm that this reflection document, codebase, and accompanying academic report represent my individual, verified work for the CS3081 Cloud Computing Mini Project.<br/>"
-        "<b>Signature</b>: <i>Candidate CS22B001</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Date</b>: November 6, 2026",
+        "<b>Signature</b>: <i>Bhukya Prabhas (230103031)</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Date</b>: November 6, 2026",
         body_style
     ))
 

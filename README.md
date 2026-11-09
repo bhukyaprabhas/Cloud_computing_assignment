@@ -1,5 +1,10 @@
 # Cloud Computing (CS3081) Mini Project: Knowledge Distillation and Local Cloud Deployment
 
+**Student Name**: Bhukya Prabhas  
+**Roll Number**: 230103031  
+**GitHub Repository**: [https://github.com/bhukyaprabhas/Cloud_computing_assignment](https://github.com/bhukyaprabhas/Cloud_computing_assignment)  
+**Submission Tag**: `final`
+
 A complete, production-grade cloud computing and machine learning pipeline that distills natural language command parsing from a 3.8B parameter teacher (`Phi-3.5-mini-instruct`) into an ultra-lightweight 70M parameter student model (`EleutherAI/pythia-70m`), containerizes the inference service, and deploys it on a local Kubernetes cluster with automated autoscaling, rolling updates, network access control, and CI/CD quality gates.
 
 ---

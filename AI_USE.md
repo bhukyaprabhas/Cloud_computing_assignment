@@ -2,7 +2,9 @@
 
 **Course**: Cloud Computing (CS3081) Mini Project  
 **Project**: Knowledge Distillation and Deployment of a Lightweight Command-Parsing Language Model on a Local Cloud  
-**Student Roll Number**: CS22B001  
+**Student Name**: Bhukya Prabhas  
+**Student Roll Number**: 230103031  
+**GitHub Repository**: https://github.com/bhukyaprabhas/Cloud_computing_assignment  
 
 ---
 

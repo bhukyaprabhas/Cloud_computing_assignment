@@ -1,4 +1,4 @@
-"""Generate authentic handwritten 3-page reflection document (CS22B001.pdf).
+"""Generate authentic handwritten 3-page reflection document (230103031.pdf).
 
 Matches the handwriting style provided in user upload:
 - Dark blue ballpoint pen ink (RGB 22, 38, 74)
@@ -146,9 +146,9 @@ def generate_page_1():
     # Document Title & Student Metadata
     draw.text((MARGIN_LEFT, y), "Personal Reflection & Learning Journal: Cloud Mini Project", font=font_title, fill=INK_COLOR)
     y += 68
-    draw.text((MARGIN_LEFT, y), "Student Name: Bhukya Prabhas   |   Roll Number: CS22B001   |   Course: CS3081", font=font_meta, fill=INK_META)
+    draw.text((MARGIN_LEFT, y), "Student Name: Bhukya Prabhas   |   Roll Number: 230103031   |   Course: CS3081", font=font_meta, fill=INK_META)
     y += 50
-    draw.text((MARGIN_LEFT, y), "GitHub Repository Link: https://github.com/assignment/cloud-project", font=font_meta, fill=INK_META)
+    draw.text((MARGIN_LEFT, y), "GitHub Repository Link: https://github.com/bhukyaprabhas/Cloud_computing_assignment", font=font_meta, fill=INK_META)
     y += 55
     
     # Divider pen stroke
@@ -211,7 +211,7 @@ def generate_page_1():
     
     # Page 1 Footer
     draw.line([(MARGIN_LEFT, BOTTOM_MARGIN), (MARGIN_RIGHT, BOTTOM_MARGIN)], fill=INK_META, width=1)
-    draw.text((MARGIN_LEFT, BOTTOM_MARGIN + 12), "CS3081 Mini Project Reflection — Roll No: CS22B001", font=font_footer, fill=INK_META)
+    draw.text((MARGIN_LEFT, BOTTOM_MARGIN + 12), "CS3081 Mini Project Reflection — Roll No: 230103031", font=font_footer, fill=INK_META)
     draw.text((MARGIN_RIGHT - 200, BOTTOM_MARGIN + 12), "Page 1 of 3", font=font_footer, fill=INK_META)
     
     return page
@@ -282,7 +282,7 @@ def generate_page_2():
     
     # Page 2 Footer
     draw.line([(MARGIN_LEFT, BOTTOM_MARGIN), (MARGIN_RIGHT, BOTTOM_MARGIN)], fill=INK_META, width=1)
-    draw.text((MARGIN_LEFT, BOTTOM_MARGIN + 12), "CS3081 Mini Project Reflection — Roll No: CS22B001", font=font_footer, fill=INK_META)
+    draw.text((MARGIN_LEFT, BOTTOM_MARGIN + 12), "CS3081 Mini Project Reflection — Roll No: 230103031", font=font_footer, fill=INK_META)
     draw.text((MARGIN_RIGHT - 200, BOTTOM_MARGIN + 12), "Page 2 of 3", font=font_footer, fill=INK_META)
     
     return page
@@ -356,12 +356,12 @@ def generate_page_3():
     y = draw_paragraph(draw, MARGIN_LEFT, y, decl, font_meta, line_height=44, indent=0)
     y += 10
     
-    draw.text((MARGIN_LEFT, y), "Signature: Bhukya Prabhas (CS22B001)", font=font_h2, fill=INK_COLOR)
+    draw.text((MARGIN_LEFT, y), "Signature: Bhukya Prabhas (230103031)", font=font_h2, fill=INK_COLOR)
     draw.text((MARGIN_RIGHT - 460, y), "Date: November 6, 2026", font=font_h2, fill=INK_COLOR)
     
     # Page 3 Footer
     draw.line([(MARGIN_LEFT, BOTTOM_MARGIN), (MARGIN_RIGHT, BOTTOM_MARGIN)], fill=INK_META, width=1)
-    draw.text((MARGIN_LEFT, BOTTOM_MARGIN + 12), "CS3081 Mini Project Reflection — Roll No: CS22B001", font=font_footer, fill=INK_META)
+    draw.text((MARGIN_LEFT, BOTTOM_MARGIN + 12), "CS3081 Mini Project Reflection — Roll No: 230103031", font=font_footer, fill=INK_META)
     draw.text((MARGIN_RIGHT - 200, BOTTOM_MARGIN + 12), "Page 3 of 3", font=font_footer, fill=INK_META)
     
     return page
@@ -384,8 +384,8 @@ def build_handwritten_pdf():
     p3.resize((850, 1100)).save(artifact_dir / "handwritten_page3.png")
     print("Preview images saved to artifact directory.")
     
-    # Save final PDF: CS22B001.pdf
-    pdf_out = Path("CS22B001.pdf")
+    # Save final PDF: 230103031.pdf
+    pdf_out = Path("230103031.pdf")
     p1.save(
         str(pdf_out),
         "PDF",
