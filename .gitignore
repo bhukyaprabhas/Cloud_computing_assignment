@@ -19,6 +19,7 @@ models/**/tokenizer.json
 *.safetensors
 *.bin
 *.pt
+*.zip
 
 # Credentials and secrets
 .env
