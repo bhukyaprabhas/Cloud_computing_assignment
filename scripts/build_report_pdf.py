@@ -44,18 +44,13 @@ class NumberedCanvas(canvas.Canvas):
         # Header (pages after page 1)
         if self._pageNumber > 1:
             self.drawString(36, 756, "CS3081: Cloud Computing Mini Project Report — Knowledge Distillation & Local Cloud Deployment")
+            page_str = f"Page {self._pageNumber} of {total_pages}"
+            self.drawRightString(576, 756, page_str)
             self.setStrokeColor(colors.HexColor("#E2E8F0"))
             self.setLineWidth(0.5)
             self.line(36, 750, 576, 750)
             
-        # Footer
-        self.setStrokeColor(colors.HexColor("#E2E8F0"))
-        self.setLineWidth(0.5)
-        self.line(36, 45, 576, 45)
-        
-        self.drawString(36, 32, "Bhukya Prabhas (230103031) | GitHub: bhukyaprabhas/Cloud_computing_assignment | Commit: final")
-        page_str = f"Page {self._pageNumber} of {total_pages}"
-        self.drawRightString(576, 32, page_str)
+        # All footers removed per user specification
         self.restoreState()
 
 
@@ -187,7 +182,7 @@ def generate_report():
 
     # ==================== PAGE 1: TITLE & TASK 1 ====================
     story.append(Paragraph("Knowledge Distillation and Deployment of a Lightweight Command-Parsing Language Model on a Local Cloud", title_style))
-    story.append(Paragraph("<b>Course</b>: Cloud Computing (CS3081) Mini Project &nbsp;|&nbsp; <b>Student Name</b>: Bhukya Prabhas &nbsp;|&nbsp; <b>Roll Number</b>: 230103031 &nbsp;|&nbsp; <b>Commit</b>: final", subtitle_style))
+    story.append(Paragraph("<b>Course</b>: Cloud Computing (CS3081) Mini Project &nbsp;|&nbsp; <b>Student Name</b>: Bhukya Prabhas &nbsp;|&nbsp; <b>Roll Number</b>: 230103031 &nbsp;|&nbsp; <b>GitHub</b>: <font color='#2B6CB0'><u>https://github.com/bhukyaprabhas/Cloud_computing_assignment</u></font>", subtitle_style))
     story.append(HRFlowable(width="100%", thickness=1, color=c_secondary, spaceBefore=0, spaceAfter=8))
     
     story.append(Paragraph("1. Executive Summary & Architecture Overview", h1_style))
